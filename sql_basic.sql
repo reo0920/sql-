@@ -129,7 +129,7 @@ SELECT celebrities.name FROM celebrities UNION SELECT countries.name FROM countr
 
 -- 問30
 -- 最年長が50歳以上かつ最年少が30歳以下の国を表示させてください。
-SELECT country_code, MAX(age), MIN(age) FROM celebrities WHERE country_code != ' ' GROUP BY country_code HAVING MAX(age) >= '50' AND MIN(age) < '30';
+SELECT country_code, MAX(age), MIN(age) FROM celebrities WHERE country_code != ' ' GROUP BY country_code HAVING MAX(age) >= '50' AND MIN(age) <= '30';
 
 -- 問31
 -- 1991年生まれと、1981年生まれの有名人が何人いるか調べてください。ただし、日付関数は使用せず、UNION句を使用してください。 
