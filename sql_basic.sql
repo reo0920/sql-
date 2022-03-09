@@ -138,14 +138,14 @@ SELECT
     COUNT(birth) AS '人数'
 FROM
     celebrities
-WHERE birth BETWEEN '1991-1-1' AND '1991-12-31'
+WHERE birth = '1991'
 UNION
 SELECT
 	LEFT(birth,4) AS '誕生年',
     COUNT(birth) AS '人数'
 FROM
     celebrities
-WHERE birth BETWEEN '1981-1-1' AND '1981-12-31'
+WHERE birth = '1981'
 
 -- 問32
 -- 有名人の出身国の平均年齢を高い方から順に表示してください。ただし、FROM句はcountriesテーブルとしてください。  !
